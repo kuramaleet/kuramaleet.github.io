@@ -7,7 +7,7 @@ Please follow this page for all the latest updates
 
 <span style="display: inline-block; width:150px; line-height: 25px; color:white; font-family: Calibri; background-color:#37751cff; font-size: 55%;border-radius: 8px; text-align:center;"><b>Twitter</b></span>
 <ul>
-  <li>Coffee</li>
+  <li><a href="Google.com">Google</a></li>
   <li>Tea</li>
   <li>Milk</li>
 </ul>
