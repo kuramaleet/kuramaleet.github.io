@@ -53,9 +53,8 @@ navbar-links:
   Medicine Availability:
     - Hydroxychloroquine: "#"
     - Favipiravir: "#"
-    - Remdesivir1: 
-       - Remdesivir-Cipla: "https://www.cipla.com/sites/default/files/Remdesivir-Distributor-List.pdf"
-       - Remdesivir-Genral: "https://drive.google.com/file/d/1X0ifCt1Jsu8quUTcKL392ynGkI62uAue/view?usp=sharing"
+    - Remdesivir-Cipla: "https://www.cipla.com/sites/default/files/Remdesivir-Distributor-List.pdf"
+    - Remdesivir-Genral: "https://drive.google.com/file/d/1X0ifCt1Jsu8quUTcKL392ynGkI62uAue/view?usp=sharing"
     - Tocilizumab: "https://www.cipla.com/sites/default/files/Tocilizumab-Distributor-List.pdf"
     - Itolizumab: "#"
     - Flabiflu: "#"
