@@ -1,0 +1,229 @@
+# --- General options --- #
+
+# url is the full website URL
+# baseurl is the website's URL without the hostname
+
+# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
+url: "http://covidhelpsite.github.io"
+baseurl: ""
+
+# If you are building a GitHub project page then use these settings:
+#url: "http://username.github.io/projectname"
+#baseurl: "/projectname"
+
+# Of course don't forget to change the username and projectname to YOUR username and project
+
+# Name of website
+title: Covid Help Site
+
+# Short description of your site
+description: Helping Hand for the Pandemic
+
+# --- Navigation bar options --- #
+
+# List of links in the navigation bar
+navbar-links:
+  Updates: "update"
+  Covid Cases:
+    - India: "https://www.covid19india.org/"
+    - World: "https://www.worldometers.info/coronavirus/"
+  Location Wise Help:
+    - Lucknow: "https://covidhelpsite.github.io/2021-04-18-Lucknow/"
+    - Kanpur: "https://covidhelpsite.github.io/2021-04-19-Kanpur/"
+    - Delhi: "#"
+    - Maharashtra: "#"
+    - Hyderabad: "#"
+    - Bangalore: "#"
+    - Gujarat: "#"
+    - Chennai: "#"
+    - Madhya Pradesh: "#"
+    - Ranchi: "#"
+    - Patna: "#"
+    - Andhra Pradesh: "#"
+    - Rajasthan: "#"
+    - Assam: "#"
+    - Chandigarh: "#"
+    - Kolkata: "#"
+  Bed Availability Tracker:
+    - Delhi: "https://coronabeds.jantasamvad.org/beds.html"
+    - Mumbai: "https://nmmchealthfacilities.com/"
+    - Bangalore: "https://bbmpgov.com/chbms/"
+    - Ludhiana: "www.hbmspunjab.in"
+    - Himachal: "#"
+  Medicine Availability:
+    - Hydroxychloroquine: "#"
+    - Favipiravir: "#"
+    - Remdesivir1: 
+       - Remdesivir-Cipla: "https://www.cipla.com/sites/default/files/Remdesivir-Distributor-List.pdf"
+       - Remdesivir-Genral: "https://drive.google.com/file/d/1X0ifCt1Jsu8quUTcKL392ynGkI62uAue/view?usp=sharing"
+    - Tocilizumab: "https://www.cipla.com/sites/default/files/Tocilizumab-Distributor-List.pdf"
+    - Itolizumab: "#"
+    - Flabiflu: "#"
+  Find Plasma:
+    - Dhoondh: "https://dhoondh.com"
+    - PlasmaDonor: "http://plasmadonor.in/"
+    - Need Plasma: "http://needplasma.in/"
+    - Plasmaline: "https://plasmaline.in/"
+  Covid Resource: "https://docs.google.com/document/d/e/2PACX-1vQLa5IUS7JfyoxIOWY53QWKgwFKko542K6lJpWkEq7oZRM79Y1H92YZNUZTOrFhWK2n3P6admdwU8YH/pub"
+  Helpline: "https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf"
+  Travel Regulation:
+    - Flight-Indigo: "https://www.goindigo.in/information/state-regulations.html"
+    - Flight-GoAir: "https://www.goair.in/travel-information/state-wise-guidelines/"
+    - Train: "https://zeenews.india.com/india/indian-railways-releases-new-covid-19-guidelines-doing-these-two-things-may-now-attract-rs-500-fine-2355511.html"
+  Join Us: "https://mail.google.com/mail/u/0/?fs=1&to=covidhelpsite@gmail.com&su=Join-Covid-Help-Site&body=TypeYourMessage&tf=cm"
+
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/img/avatar-icon.png"
+
+# If you want to have an image logo in the top-left corner instead of the title text,
+# then specify the following parameter
+# title-img: /path/to/image
+
+# --- Footer options --- #
+
+# Change all these values or delete the ones you don't want.
+# Important: you must keep the "name" parameter, everything else you can remove
+author: Help
+
+
+# Select which links to show in the footer
+footer-links-active:
+  rss: false
+  facebook: false
+  email: false
+  twitter: false
+  google-plus: false
+  github: false
+  reddit: false
+  linkedin: false
+  xing: false
+  stackoverflow: false
+  snapchat: false
+  instagram: false
+  youtube: false
+  spotify: false
+  telephone: false
+
+# Select which share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: true
+  google: false
+  linkedin: true
+
+# --- Misc --- #
+# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
+#disqus: ""
+
+ #Fill in your Google Analytics ID to track your website using GA
+
+# Facebook App ID
+# fb_app_id: ""
+
+# Excerpt Word Length
+# Truncates the excerpt to the specified number of words on the index page
+
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "blog/page:num"
+excerpt_length: 50
+
+# --- Don't need to touch anything below here (but you can if you want) --- #
+
+# Output options (more information on Jekyll's site)
+timezone: "America/Vancouver"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+
+kramdown:
+  input: GFM
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      show-avatar: true
+
+# Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
+link-tags: false
+
+# Exclude these files from production site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+  - Vagrantfile
+
+# prose.io config
+prose:
+  rooturl: '_posts'
+  media: 'img'
+  ignore:
+    - 404.html
+    - LICENSE
+    - feed.xml
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /css
+    - /img
+    - /js
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
+      - name: "subtitle"
+        field:
+          element: "textarea"
+          label: "Subtitle"
+          placeholder: "A description of your post."
+          alterable: true
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Enter date of post."
+          placeholder: "yyyy-mm-dd"
+          alterable: true
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+          help: "Add a thumbnail image to your post."
+          placeholder: "Thumbnail"
+          alterable: true
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish"
+          help: "Check to publish post, uncheck to hide."
+
+gems:
+  - jekyll-paginate
+
+# Beautiful Jekyll / Dean Attali
+# 2fc73a3a967e97599c9763d05e564189
